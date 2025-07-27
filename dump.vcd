@@ -1,0 +1,163 @@
+$date
+	Sat Jul 26 13:00:34 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module cpu_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$scope module uut $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 4 # rs2 [3:0] $end
+$var wire 4 $ rs1 [3:0] $end
+$var wire 8 % result [7:0] $end
+$var wire 1 & reg_write $end
+$var wire 4 ' rd [3:0] $end
+$var wire 4 ( opcode [3:0] $end
+$var wire 16 ) instr [15:0] $end
+$var wire 8 * b [7:0] $end
+$var wire 2 + alu_op [1:0] $end
+$var wire 8 , a [7:0] $end
+$var reg 8 - pc [7:0] $end
+$scope module alu1 $end
+$var wire 2 . op [1:0] $end
+$var wire 8 / b [7:0] $end
+$var wire 8 0 a [7:0] $end
+$var reg 8 1 result [7:0] $end
+$upscope $end
+$scope module cu $end
+$var wire 4 2 opcode [3:0] $end
+$var reg 2 3 alu_op [1:0] $end
+$var reg 1 & reg_write $end
+$upscope $end
+$scope module im $end
+$var wire 8 4 addr [7:0] $end
+$var wire 16 5 instr [15:0] $end
+$upscope $end
+$scope module rf $end
+$var wire 1 ! clk $end
+$var wire 4 6 ra1 [3:0] $end
+$var wire 4 7 ra2 [3:0] $end
+$var wire 8 8 rd1 [7:0] $end
+$var wire 8 9 rd2 [7:0] $end
+$var wire 4 : wa [3:0] $end
+$var wire 8 ; wd [7:0] $end
+$var wire 1 & we $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx ;
+b1 :
+bx 9
+bx 8
+b11 7
+b10 6
+b1000100100011 5
+b0 4
+b0 3
+b1 2
+bx 1
+bx 0
+bx /
+b0 .
+b0 -
+bx ,
+b0 +
+bx *
+b1000100100011 )
+b1 (
+b1 '
+1&
+bx %
+b10 $
+b11 #
+1"
+0!
+$end
+#5
+1!
+#10
+0!
+0"
+#15
+b1 +
+b1 .
+b1 3
+b101 #
+b101 7
+b101 $
+b101 6
+b100 '
+b100 :
+b10 (
+b10 2
+b10010001010101 )
+b10010001010101 5
+b1 -
+b1 4
+1!
+#20
+0!
+#25
+0&
+b0 +
+b0 .
+b0 3
+b0 #
+b0 7
+b0 $
+b0 6
+b0 '
+b0 :
+b1111 (
+b1111 2
+b1111000000000000 )
+b1111000000000000 5
+b10 -
+b10 4
+1!
+#30
+0!
+#35
+1!
+#40
+0!
+#45
+1!
+#50
+0!
+#55
+1!
+#60
+0!
+#65
+1!
+#70
+0!
+#75
+1!
+#80
+0!
+#85
+1!
+#90
+0!
+#95
+1!
+#100
+0!
+#105
+1!
+#110
+0!
